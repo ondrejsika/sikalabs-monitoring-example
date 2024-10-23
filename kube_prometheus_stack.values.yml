@@ -171,6 +171,11 @@ alertmanager:
           - alertmanager.k8s.sikademo.com
         secretName: alertmanager.k8s.sikademo.com-tls
 
+  alertmanagerSpec:
+    alertmanagerConfigSelector:
+      matchLabels:
+        alertmanager: config
+
   config:
     global:
       resolve_timeout: 10s
