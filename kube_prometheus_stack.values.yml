@@ -76,8 +76,8 @@ grafana:
         name: grafana-admin
         namespace: monitoring
       stringData:
+        admin-user: admin
         admin-password: admin
-        admin-user: user
 
   admin:
     existingSecret: grafana-admin
